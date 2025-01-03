@@ -11,7 +11,7 @@ target = list(np.load("features.npy"))
 
 app = Flask(__name__)
 
-@app.route("/predict", methods=["POST"])
+@app.route("/", methods=["POST"])
 def predict():
     try:
         # Get JSON data from the request
